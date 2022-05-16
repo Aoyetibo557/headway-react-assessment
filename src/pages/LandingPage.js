@@ -32,7 +32,7 @@ function LandingPage() {
         </article>
 
         <div>
-          <img src={PersonImage} alt="Person" />
+          <img className="landingpage__img" src={PersonImage} alt="Person" />
         </div>
       </section>
 

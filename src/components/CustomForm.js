@@ -22,13 +22,21 @@ function CustomForm() {
           placeholder="Custom Slug"
           value={slug}
           onInput={(e) => setSlug(e.target.value)}
-          className="customform__input"
+          className="slug customform__input"
         />
 
-        <button type="submit" className="btn primary__btn">
+        <button type="submit" className="btn primary__btn btn__responsive">
           Shorten URL
         </button>
       </form>
+
+      <div>
+        <p>
+          {" "}
+          By clicking shorten, you agree to Rebrandly's{" "}
+          <span> Terms of Use </span> and <span>Privacy Policy </span>
+        </p>
+      </div>
     </div>
   );
 }
