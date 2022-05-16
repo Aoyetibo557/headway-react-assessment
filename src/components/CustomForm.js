@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 import "../globalstyles.css";
+import { BsClipboard } from "react-icons/bs";
 
 function CustomForm() {
   const [url, setUrl] = useState("");
@@ -9,13 +10,22 @@ function CustomForm() {
   return (
     <div className="customform">
       <form>
-        <input
-          type="text"
-          placeholder="Make your links shorter"
-          value={url}
-          onInput={(e) => setUrl(e.target.value)}
-          className="customform__input"
-        />
+        <div>
+          <input
+            type="text"
+            placeholder="Make your links shorter"
+            value={url}
+            onInput={(e) => setUrl(e.target.value)}
+            className="customform__input"
+          />
+          <BsClipboard
+            className="input__icon"
+            onClick={() => {
+              navigator.clipboard.writeText(url);
+              alert("Copied!");
+            }}
+          />
+        </div>
 
         <input
           type="text"

@@ -65,6 +65,21 @@
   height: 100px;
 }
 
+.customform form {
+  display: flex;
+}
+
+.customform form div {
+  background: #fff;
+  border-radius: 3px;
+}
+
+.input__icon {
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 .customform__input {
   padding: 10px;
   margin-left: 10px;
