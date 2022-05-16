@@ -1,29 +1,30 @@
 import React from "react";
 import "./styles.css";
-import { Link } from "react-router-dom";
 
 function Header() {
   ///BEM naming convention
   return (
     <header className="header">
-      <div className="header__left">
-        <Link className="header__logo" title="Logo" to="/">
-          {" "}
-          Rebrandly
-        </Link>
-        <nav>
-          <Link className="header__link" to="/">
-            Features
-          </Link>
-          <Link className="header__link" to="/">
-            Pricing
-          </Link>
-        </nav>
-      </div>
+      <section className="header__container">
+        <div className="header__left">
+          <a className="header__logo" title="Logo" href="/">
+            {" "}
+            Rebrandly
+          </a>
+          <nav>
+            <a className="header__link" href="/">
+              Features
+            </a>
+            <a className="header__link" href="/">
+              Pricing
+            </a>
+          </nav>
+        </div>
 
-      <Link className="header__link" to="/">
-        Login
-      </Link>
+        <a className="header__link" href="/">
+          Login
+        </a>
+      </section>
     </header>
   );
 }

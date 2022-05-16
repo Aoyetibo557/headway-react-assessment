@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.btn {
+  width: 190px;
+  padding: 10px;
+  background: transparent;
+  font-size: 17px;
+  font-weight: 400;
+  border: 1px solid #000;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: all ease-in 0.2s;
+}
+
+.primary__btn {
+  width: 170px;
+  background-color: blueviolet;
+  border: none;
+  color: #fff;
+}
+
+.primary__btn:hover {
+  border: 1px solid blueviolet;
+  color: blueviolet;
+  background-color: transparent;
+}
+
+.secondary__btn {
+  color: blueviolet;
+  border: 1px solid blueviolet;
+}
+
+.secondary__btn:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
