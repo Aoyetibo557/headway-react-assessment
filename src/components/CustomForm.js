@@ -9,7 +9,11 @@ function CustomForm() {
 
   return (
     <div className="customform">
-      <form>
+      <form
+        method="POST"
+        aria-roledescription="Has two input forms. To take in user URL and custom slug"
+        title="input form"
+      >
         <div>
           <input
             type="text"
